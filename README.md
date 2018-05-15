@@ -6,7 +6,7 @@
 
 ### What is this?
 
-This theme is an adaptation of [https://github.com/luclemo/Styl_s](an adaptation) of the bare bones starter theme, [Underscores (\_s)](http://underscores.me). It uses [Stylus](https://learnboost.github.io/stylus/) rather than Sass as a preprocessor, and I like that. So props [https://github.com/luclemo](Lucas).
+This theme is an adaptation of [an adaptation](https://github.com/luclemo/Styl_s) of the bare bones starter theme, [Underscores (\_s)](http://underscores.me). It uses [Stylus](https://learnboost.github.io/stylus/) rather than Sass as a preprocessor, and I like that. So props to [Lucas](https://github.com/luclemo).
 
 ###Why it's on Github
 
