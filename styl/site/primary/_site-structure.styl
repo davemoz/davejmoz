@@ -1,0 +1,15 @@
+#page
+	display grid
+	grid-template-columns repeat(8, 1fr)
+	grid-template-rows minmax(90.88px, 1fr) auto 1fr
+
+	> header
+	> #content
+	> footer
+		grid-column 1 / -1
+		padding 0 2rem
+	
+	> header
+		padding 0 0 0 2rem
+		display flex
+		justify-content space-between

@@ -13,9 +13,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			Copyright &copy; <?php the_date('Y'); ?>
+			Copyright &copy; <?php echo date('Y'); ?>
 			<span class="sep"> | </span>
-			Made with <i class="fab fa-heart">Love</i> in NY and <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'davejmoz' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'davejmoz' ), 'WordPress' ); ?></a>.
+			Made with <span class="heart"><i class="fas fa-heart"></i></span> in NY and <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'davejmoz' ) ); ?>"><?php printf( esc_html__( 'proudly powered by %s', 'davejmoz' ), 'WordPress' ); ?></a>.
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

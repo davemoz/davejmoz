@@ -1,72 +1,294 @@
+.mobile-is-visible
+	.main-navigation
+		position fixed
+		z-index 99
+		right 0
+		top 2rem
 .main-navigation
-	clear both
-	display block
-	float left
-	width 100%
-	ul
+	display flex
+	padding-right 0
+	#nav-wrap
 		display none
-		list-style none
-		margin 0
-		padding-left 0
-		ul
-			box-shadow 0 3px 3px rgba(0, 0, 0, 0.2)
-			float left
-			position absolute
-			top 1.5em
-			left -999em
-			z-index 99999
+	#mobile-nav-wrap
+		position fixed
+		right -100%
+		width 100%
+		z-index 99
+		overflow-x hidden
+		overflow-y hidden
+		background-color rgba(0,0,0,0.85)
+		-webkit-transition -webkit-transform 0s ease-out .5s
+		transition -webkit-transform 0s ease-out .5s
+		transition transform 0s ease-out .5s
+		transition transform 0s ease-out .5s,-webkit-transform 0s ease-out .5s
+		display grid
+		grid-template-rows min-content 80px
+		padding-top 6rem
+		#mobile-menu
+			display flex
+			margin 0
+			overflow-y auto
 			ul
-				left -999em
-				top 0
-			li
-				&:hover > ul
-				&.focus > ul
-					left 100%
-			a
-				width 200px
-			// uncomment next few lines to style the hover & focus states
-			// :hover > a
-			// .focus > a
-			// a:hover
-			// a.focus
-		li:hover > ul
-		li.focus > ul
-			left auto
-	li
-		float left
-		position relative
-		// uncomment next few lines to style the hover & focus states
-		// &:hover > a
-		// &.focus > a
-	a
-		display block
-		text-decoration none
-	// uncomment next few lines to style current page links
-	// .current_page_item > a
-	// .current-menu-item > a
-	// .current_page_ancestor > a
+				width 100%
+				display flex
+				flex-direction column
+				align-items center
+				list-style none
+				margin 0
+				padding-left 0
+				li
+					width 100%
+					display flex
+					justify-content center
+					align-items center
+					&:hover
+					&:focus
+						a
+							background rgba(0,0,0,0.5)
+					a
+						width 100%
+						text-align center
+						display block
+						text-decoration none
+						padding 1.5rem
+				.current_page_item > a
+				.current-menu-item > a
+				.current_page_ancestor > a
+					background rgba(0,0,0,0.2)
+					opacity 0.6
+					ul
+						box-shadow 0 3px 3px rgba(0, 0, 0, 0.5)
+						float left
+						position absolute
+						top 1.5em
+						left -999em
+						z-index 99999
+						ul
+							left -999em
+							top 0
+						li
+							&:hover > ul
+							&.focus > ul
+								left 100%
+							a
+								width 200px
+							// uncomment next few lines to style the hover & focus states
+							// :hover > a
+							// .focus > a
+							// a:hover
+							// a.focus
+		#social-menu
+			position absolute
+			bottom 0
+			left 0
+			right 0
+			display flex
+			justify-content center
+			align-items center
+			ul
+				margin 0
+				padding 0
+				list-style none
+				min-width 100vw
+				min-height 5rem
+				display grid
+				grid-template-columns 1fr 1fr 1fr 1fr
+				li
+					display flex
+					justify-content center
+					align-items center
+					a
+						width: 100%;
+						height: 100%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						padding 0
+						color #ffffff
+						&:hover
+							opacity 0.6
+				[id*=-Twitter]
+					a
+						background-color $color__social_twitter
+				[id*=-Instagram]
+					a
+						background-color $color__social_instagram
+				[id*=-LinkedIn]
+					a
+						background-color $color__social_linkedin
+				[id*=-Dribbble]
+					a
+						background-color $color__social_dribbble
 
-// Small menu ------------------------
-.menu-toggle
-.main-navigation.toggled ul
-	display block
+	// Mobile menu toggle ------------------------
+	.menu-toggle
+		display flex
+		justify-content center
+		align-items center
+		padding 0 2rem
+		cursor pointer
+		z-index 9999
+
+		.icon-small-size
+			display: block;
+			fill: none;
+			stroke: #404040;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-miterlimit: 10;
+			margin: auto;
+			overflow: visible;
+			width: 2rem;
+			height: 2rem;
+
+			path
+				transition: .4s all ease-out
+
+			#top-line
+			#bottom-line
+				-webkit-transform rotate(0deg) translate3d(0,0,0)
+				transform rotate(0deg) translate3d(0,0,0)
+				-webkit-transition -webkit-transform .2s ease-in
+				transition -webkit-transform .2s ease-in
+				transition transform .2s ease-in
+				transition transform .2s ease-in,-webkit-transform .2s ease-in
+			
+			#middle-line
+				-webkit-transition opacity .2s ease-in
+				transition opacity .2s ease-in
+		
+		&:hover	
+			line
+
+		&.active
+
+			line
+				stroke #ffffff
+				transition .4s all ease-out
+			
+			#top-line
+				-webkit-transform rotate(-45deg) translate3d(-6px,8px,0)
+				transform rotate(-45deg) translate3d(-6px,9px,0)
+			
+			#bottom-line
+				-webkit-transform rotate(45deg) translate3d(2px,-13px,0)
+				transform rotate(45deg) translate3d(1px,-12px,0)
+
+			#middle-line
+				opacity 0
+
+			&:hover
+				line
+				stroke #fff
+
+			/ ~ .site-branding
+				color #ffffff
 
 @media screen and (min-width 37.5em)
-	.menu-toggle
-		display none
-	.main-navigation ul
-		display block
+	.main-navigation
+		padding-right 2rem
+		.menu-toggle
+			display none
+		#mobile-nav-wrap
+			right -100%!important
+		#nav-wrap
+			display flex
+			position relative
+			right 0
+			width 100%
+			background-color transparent
+			padding 0
+			#primary-menu
+				margin 0 2rem 0
+				display flex
+				align-items stretch
+				ul
+					display flex
+					flex-direction row
+					list-style none
+					margin 0
+					padding 0
+					li
+						display flex
+						align-items stretch
+						&:hover
+						&:focus
+							a
+								text-decoration underline
+						a
+							display flex
+							align-items center
+							text-decoration none
+							padding 0 1.75rem
+					.current_page_item
+					.current-menu-item
+					.current_page_ancestor
+						a
+							background #f7f7f7
+						&:hover
+							a
+								text-decoration none
+						
+			#social-menu
+				position relative
+				display flex
+				ul
+					margin 0
+					padding 0
+					display flex
+					list-style none
+					li
+						display flex
+						justify-content center
+						align-items center
+						a
+							display flex
+							justify-content center
+							align-items center
+							margin-right 6px
+							width 48px
+							height 48px
+							border-radius 50%
+					&:last-child
+						a
+							margin-right 0
+					[id*=-Twitter]
+						a
+							color $color__social_twitter
+							&:hover
+								color #ffffff
+								background $color__social_twitter
+					[id*=-Instagram]
+						a
+							color $color__social_instagram
+							&:hover
+								color #ffffff
+								background $color__social_instagram
+					[id*=-LinkedIn]
+						a
+							color $color__social_linkedin
+							&:hover
+								color #ffffff
+								background $color__social_linkedin
+					[id*=-Dribbble]
+						a
+							color $color__social_dribbble
+							&:hover
+								color #ffffff
+								background $color__social_dribbble
 
 .comment-navigation
 .posts-navigation
 .post-navigation
+	display flex
+
 	.site-main &
 		margin 0 0 1.5em
 		overflow hidden
 	& .nav-previous
-		float left
+		justify-self flex-start
 		width 50%
 	& .nav-next
-		float right
+		justify-self flex-end
 		text-align right
 		width 50%

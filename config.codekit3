@@ -51,16 +51,6 @@
 		"oAP": "\/functions.php",
 		"oF": 0
 		},
-	"\/gulpfile.js": {
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/gulpfile-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/header.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -110,6 +100,16 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/js\/bigSlide.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/bigSlide.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/js\/customizer.js": {
 		"ft": 64,
 		"ma": 1,
@@ -117,8 +117,25 @@
 		"oA": 0,
 		"oAP": "\/js\/customizer-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
+		},
+	"\/js\/navigation-min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/navigation-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/js\/navigation-min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/js\/navigation-min.js.map",
+		"oF": 0
 		},
 	"\/js\/navigation.js": {
 		"ft": 64,
@@ -127,7 +144,7 @@
 		"oA": 0,
 		"oAP": "\/js\/navigation-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/js\/skip-link-focus-fix.js": {
@@ -137,7 +154,7 @@
 		"oA": 0,
 		"oAP": "\/js\/skip-link-focus-fix-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/languages\/readme.txt": {
@@ -154,13 +171,22 @@
 		"oAP": "\/languages\/styl_s.pot",
 		"oF": 0
 		},
-	"\/package.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/package-min.json",
+	"\/menu-toggle.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/menu-toggle.svg",
 		"oF": 0,
-		"oO": 0,
-		"oS": 1
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/page-home.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-home.php",
+		"oF": 0
 		},
 	"\/page.php": {
 		"cB": 0,
@@ -177,7 +203,7 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/README.html",
 		"oF": 0,
 		"oFM": 0,
@@ -227,6 +253,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/sidebar.php",
+		"oF": 0
+		},
+	"\/single-project.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/single-project.php",
 		"oF": 0
 		},
 	"\/single.php": {
@@ -323,6 +356,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/_content-sidebar.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/styl\/layout\/_fullwidth.styl": {
+		"aP": 1,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_fullwidth.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -431,19 +477,6 @@
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/styl\/modules\/_clearings.styl": {
-		"aP": 1,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 1,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/_clearings.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
 	"\/styl\/modules\/_infinite-scroll.styl": {
 		"aP": 1,
 		"bl": 0,
@@ -522,6 +555,19 @@
 		"oS": 0,
 		"rrU": 0
 		},
+	"\/styl\/site\/primary\/_branding.styl": {
+		"aP": 1,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_branding.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
 	"\/styl\/site\/primary\/_comments.styl": {
 		"aP": 1,
 		"bl": 0,
@@ -535,6 +581,19 @@
 		"oS": 0,
 		"rrU": 0
 		},
+	"\/styl\/site\/primary\/_footer.styl": {
+		"aP": 1,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
 	"\/styl\/site\/primary\/_posts-and-pages.styl": {
 		"aP": 1,
 		"bl": 0,
@@ -544,6 +603,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/_posts-and-pages.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/styl\/site\/primary\/_site-structure.styl": {
+		"aP": 1,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 1,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_site-structure.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -682,6 +754,13 @@
 		"oAP": "\/style.css.map",
 		"oF": 0
 		},
+	"\/template-parts\/content-homepage.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-homepage.php",
+		"oF": 0
+		},
 	"\/template-parts\/content-none.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -701,6 +780,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/template-parts\/content-search.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-single-project.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/content-single-project.php",
 		"oF": 0
 		},
 	"\/template-parts\/content-single.php": {
@@ -2542,7 +2628,7 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 3,
+		"syntaxCheckerStyle": 0,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {
