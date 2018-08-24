@@ -1,10 +1,8 @@
 a
 	color $color__onLight_link
 	display inline-block
-	position relative
 	text-decoration underline
-	text-decoration-color #666666
-	transition .3s all ease-out
+	transition .2s all ease-out
 	&:visited
 		color $color__onLight_link-visited
 	&:hover
@@ -34,31 +32,3 @@ a
 			&:hover
 			&:active
 				outline 0
-	.site-branding
-		a
-			color $color__onDark_link
-			text-decoration none
-			&:visited
-				color $color__onDark_link-visited
-			&:hover
-			&:focus
-			&:active
-				color $color__onDark_link-hover
-				text-decoration none
-			&:focus
-				outline thin dotted
-			&:hover
-			&:active
-				outline 0
-
-@media screen and (min-width 37.5em)
-	.mobile-is-visible
-		.site-branding
-			a
-				color $color__onLight_link
-			&:visited
-				color $color__onLight_link-visited
-			&:hover
-			&:focus
-			&:active
-				color $color__onLight_link-hover

@@ -1,3 +1,14 @@
+.site-branding
+    a
+        color $color__text-main
+        font-weight 200
+        text-decoration none
+		text-shadow 0
+		transition all .3s ease-in-out
+        &:hover
+            text-decoration none
+			text-shadow 5px 5px 0px rgba(0,0,0,0.1)
+			transition all .3s ease-in-out
 .mobile-is-visible
     .site-branding
         position fixed
@@ -5,12 +16,29 @@
         left 2rem
         top 0
         a
-            &:hover
-                opacity 0.7
-.site-branding
-    z-index 999
-    a
-        font-weight 200
-        text-decoration none
-        &:hover
-            text-decoration none
+            color $color__onDark_link
+			text-decoration none
+			&:visited
+				color $color__onDark_link-visited
+			&:hover
+			&:focus
+			&:active
+				color $color__onDark_link-hover
+				text-decoration none
+			&:focus
+				outline thin dotted
+			&:hover
+			&:active
+				outline 0
+
++desktop()
+	.mobile-is-visible
+		.site-branding
+			a
+				color $color__text-main
+			&:visited
+				color $color__text-main
+			&:hover
+			&:focus
+			&:active
+				color $color__onLight_link-hover

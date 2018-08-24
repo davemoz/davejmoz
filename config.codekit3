@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/.vscode\/settings.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/.vscode\/settings-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/404.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -272,7 +280,7 @@
 		"oA": 1,
 		"oAP": "\/_elements.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/elements\/_lists.styl": {
@@ -285,7 +293,7 @@
 		"oA": 1,
 		"oAP": "\/_lists.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/elements\/_tables.styl": {
@@ -298,7 +306,7 @@
 		"oA": 1,
 		"oAP": "\/_tables.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/forms\/_buttons.styl": {
@@ -311,7 +319,7 @@
 		"oA": 1,
 		"oAP": "\/_buttons.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/forms\/_fields.styl": {
@@ -324,7 +332,7 @@
 		"oA": 1,
 		"oAP": "\/_fields.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/forms\/_forms.styl": {
@@ -337,7 +345,7 @@
 		"oA": 1,
 		"oAP": "\/_forms.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/layout\/_content-sidebar.styl": {
@@ -350,7 +358,7 @@
 		"oA": 1,
 		"oAP": "\/_content-sidebar.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/layout\/_fullwidth.styl": {
@@ -363,7 +371,7 @@
 		"oA": 1,
 		"oAP": "\/_fullwidth.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/layout\/_normalize.styl": {
@@ -376,7 +384,7 @@
 		"oA": 1,
 		"oAP": "\/_normalize.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/layout\/_sidebar-content.styl": {
@@ -389,7 +397,7 @@
 		"oA": 1,
 		"oAP": "\/_sidebar-content.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/media\/_captions.styl": {
@@ -402,7 +410,7 @@
 		"oA": 1,
 		"oAP": "\/_captions.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/media\/_galleries.styl": {
@@ -415,7 +423,7 @@
 		"oA": 1,
 		"oAP": "\/_galleries.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/media\/_media.styl": {
@@ -428,7 +436,7 @@
 		"oA": 1,
 		"oAP": "\/_media.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/mixins\/_mixins-master.styl": {
@@ -441,7 +449,7 @@
 		"oA": 1,
 		"oAP": "\/_mixins-master.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/modules\/_accessibility.styl": {
@@ -454,7 +462,7 @@
 		"oA": 1,
 		"oAP": "\/_accessibility.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/modules\/_alignments.styl": {
@@ -467,7 +475,7 @@
 		"oA": 1,
 		"oAP": "\/_alignments.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/modules\/_infinite-scroll.styl": {
@@ -480,7 +488,7 @@
 		"oA": 1,
 		"oAP": "\/_infinite-scroll.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/navigation\/_links.styl": {
@@ -493,7 +501,7 @@
 		"oA": 1,
 		"oAP": "\/_links.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/navigation\/_menus.styl": {
@@ -506,7 +514,7 @@
 		"oA": 1,
 		"oAP": "\/_menus.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/navigation\/_navigation.styl": {
@@ -519,7 +527,7 @@
 		"oA": 1,
 		"oAP": "\/_navigation.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/site\/_site.styl": {
@@ -532,7 +540,7 @@
 		"oA": 1,
 		"oAP": "\/_site.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/site\/primary\/_asides.styl": {
@@ -545,7 +553,7 @@
 		"oA": 1,
 		"oAP": "\/_asides.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/site\/primary\/_branding.styl": {
@@ -558,7 +566,7 @@
 		"oA": 1,
 		"oAP": "\/_branding.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/site\/primary\/_comments.styl": {
@@ -571,7 +579,7 @@
 		"oA": 1,
 		"oAP": "\/_comments.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/site\/primary\/_footer.styl": {
@@ -584,7 +592,7 @@
 		"oA": 1,
 		"oAP": "\/_footer.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/site\/primary\/_posts-and-pages.styl": {
@@ -597,7 +605,7 @@
 		"oA": 1,
 		"oAP": "\/_posts-and-pages.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/site\/primary\/_site-structure.styl": {
@@ -610,7 +618,7 @@
 		"oA": 1,
 		"oAP": "\/_site-structure.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/site\/secondary\/_widgets.styl": {
@@ -623,7 +631,7 @@
 		"oA": 1,
 		"oAP": "\/_widgets.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/style.styl": {
@@ -636,7 +644,7 @@
 		"oA": 0,
 		"oAP": "\/style.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/typography\/_copy.styl": {
@@ -649,7 +657,7 @@
 		"oA": 1,
 		"oAP": "\/_copy.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/typography\/_headings.styl": {
@@ -662,7 +670,7 @@
 		"oA": 1,
 		"oAP": "\/_headings.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/typography\/_typography.styl": {
@@ -675,7 +683,7 @@
 		"oA": 1,
 		"oAP": "\/_typography.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/variables-site\/_colors.styl": {
@@ -688,7 +696,7 @@
 		"oA": 1,
 		"oAP": "\/_colors.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/variables-site\/_structure.styl": {
@@ -701,7 +709,7 @@
 		"oA": 1,
 		"oAP": "\/_structure.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/variables-site\/_typography.styl": {
@@ -714,7 +722,7 @@
 		"oA": 1,
 		"oAP": "\/_typography.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/styl\/variables-site\/_variables-site.styl": {
@@ -727,7 +735,7 @@
 		"oA": 1,
 		"oAP": "\/_variables-site.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/style.css": {
@@ -2751,7 +2759,7 @@
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"importCSS": 1,
-		"outputStyle": 0,
+		"outputStyle": 1,
 		"resolveRelativeURLS": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0

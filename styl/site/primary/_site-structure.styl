@@ -1,13 +1,15 @@
 #page
 	display grid
 	grid-template-columns repeat(8, 1fr)
-	grid-template-rows minmax(90.88px, 1fr) auto 1fr
+	grid-template-rows minmax(90.88px, 1fr) auto min-content
 
-	> header
-	> #content
+	> header,
 	> footer
 		grid-column 1 / -1
-		padding 0 2rem
+		padding 2rem
+		position relative
+	> #content
+		grid-column 1 / -1
 	
 	> header
 		padding 0 0 0 2rem

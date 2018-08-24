@@ -354,7 +354,7 @@ add_action( 'widgets_init', 'davejmoz_widgets_init' );
 function davejmoz_scripts() {
 	wp_enqueue_style( 'davejmoz-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.12/js/all.js', array(), null );
+	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.2.0/js/all.js', array(), null );
 
 	wp_enqueue_script( 'bigslide', get_template_directory_uri() . '/js/bigSlide.min.js', array('jquery'), '0.12.0', true );
 
@@ -405,14 +405,13 @@ function add_attribs_to_scripts( $tag, $handle, $src ) {
 		return '<script async src="' . $src . '" async="async" type="text/javascript"></script>' . "\n";
 	}
 	if ( in_array( $handle, $fontawesome ) ) {
-		return '<script defer src="' . $src . '" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous" type="text/javascript"></script>' . "\n";
+		return '<script defer src="' . $src . '" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>' . "\n";
 	}
 	if ( in_array( $handle, $jquery ) ) {
 		return '<script src="' . $src . '" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" type="text/javascript"></script>' . "\n";
 	}
 	return $tag;
 }
-
 
 
 /**
