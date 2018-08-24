@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/.vscode\/launch.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/.vscode\/launch-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/.vscode\/settings.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -194,6 +202,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/page.php",
+		"oF": 0
+		},
+	"\/phpinfo.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/phpinfo.php",
 		"oF": 0
 		},
 	"\/README.md": {
