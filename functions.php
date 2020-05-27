@@ -109,7 +109,7 @@ function davejmoz_setup() {
 			'capability_type'       => 'page',
 			'show_in_rest'          => true,
 		);
-		register_post_type( 'projects', $args );
+		register_post_type( 'project', $args );
 
 	}
 	add_action( 'init', 'projects_custom_post_type', 0 );
@@ -156,7 +156,7 @@ function davejmoz_setup() {
 			'rewrite'                    => $rewrite,
 			'show_in_rest'               => true,
 		);
-		register_taxonomy( 'project-categories', array( 'projects' ), $args );
+		register_taxonomy( 'project-categories', array( 'project' ), $args );
 
 	}
 	add_action( 'init', 'projects_taxonomy', 0 );
@@ -231,70 +231,6 @@ function davejmoz_setup() {
 	}
 	add_shortcode( 'menu', 'insert_menu_shortcode' );
 
-	/**
-	* Custom Social Media Nav Walker by Aurooba Ahmed
-	* This uses Font Awesome and adds in the correct icon by detecting the URL of the menu item.
-	* You can use this by doing a custom wp_nav_menu query:
-	* wp_nav_menu(array('items_wrap'=> '%3$s', 'walker' => new WO_Nav_Social_Walker(), 'container'=>false, 'menu_class' => '', 'theme_location'=>'social', 'fallback_cb'=>false ));
-	*
-	*/
-	class Walker_Social_Nav_Menu extends Walker_Nav_Menu {
-		function start_lvl( &$output, $depth = 0, $args = array() ) {
-			$indent = str_repeat("\t", $depth);
-			$output .= "\n$indent\n";
-		}
-		function end_lvl( &$output, $depth = 0, $args = array() ) {
-			$indent = str_repeat("\t", $depth);
-			$output .= "$indent\n";
-		}
-		function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
-			$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
-			$id = apply_filters( 'nav_menu_item_id', 'social-link-'. $item->ID, $item, $args );
-			$linktitle = apply_filters( 'nav_menu_item_title', 'social-link-'. $item->attr_title, $item, $args );
-			$idtag = $linktitle ? ' id="' . esc_attr( $linktitle ) . '"' : ' id="' . esc_attr( $id ) . '"';
-			$output .= $indent . '<li '. $idtag .' '. $value .'>';
-			$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
-			$attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
-			$attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
-			$attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
-			$item_output = $args->before;
-	        if (strpos($item->url, 'facebook') !== false) {
-	            $item_output .= '<a'. $attributes .'><i class="fab fa-facebook-f">';
-	            $item_output .= '</i></a>';
-	            $item_output .= $args->after;
-	        } elseif (strpos($item->url, 'twitter') !== false)  {
-	            $item_output .= '<a'. $attributes .'><i class="fab fa-twitter">';
-	            $item_output .= '</i></a>';
-	            $item_output .= $args->after;
-	        } elseif (strpos($item->url, 'instagram') !== false)  {
-	            $item_output .= '<a'. $attributes .'><i class="fab fa-instagram">';
-	            $item_output .= '</i></a>';
-	            $item_output .= $args->after;
-	        } elseif (strpos($item->url, 'dribbble') !== false)  {
-	            $item_output .= '<a'. $attributes .'><i class="fab fa-dribbble">';
-	            $item_output .= '</i></a>';
-	            $item_output .= $args->after;
-			} elseif (strpos($item->url, 'linkedin') !== false)  {
-	            $item_output .= '<a'. $attributes .'><i class="fab fa-linkedin-in">';
-	            $item_output .= '</i></a>';
-	            $item_output .= $args->after;
-	        }  elseif (strpos($item->url, 'snapchat') !== false)  {
-	            $item_output .= '<a'. $attributes .'><i class="fab fa-snapchat-ghost">';
-	            $item_output .= '</i></a>';
-	            $item_output .= $args->after;	            
-	        } elseif (strpos($item->url, 'youtube') !== false)  {
-	            $item_output .= '<a'. $attributes .'><i class="fab fa-youtube">';
-	            $item_output .= '</i></a>';
-	            $item_output .= $args->after;	
-	        }			
-			
-			$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
-		}
-		function end_el( &$output, $item, $depth = 0, $args = array() ) {
-			$output .= "\n";
-		}
-	}
-
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -307,12 +243,12 @@ function davejmoz_setup() {
 		'caption',
 	) );
 
-	/*
-      * Add Editor Style for adequate styling in text editor.
-      *
-      * @link http://codex.wordpress.org/Function_Reference/add_editor_style
-      */
-	add_editor_style( 'editor-style.css' );
+/*
+  * Add Editor Style for adequate styling in text editor.
+  *
+  * @link http://codex.wordpress.org/Function_Reference/add_editor_style
+  */
+add_editor_style( 'editor-style.css' );
 
 }
 endif; // davejmoz_setup
@@ -352,13 +288,13 @@ add_action( 'widgets_init', 'davejmoz_widgets_init' );
  * Enqueue scripts and styles.
  */
 function davejmoz_scripts() {
-	wp_enqueue_style( 'davejmoz-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'davejmoz-style', get_stylesheet_uri(), array(), filemtime( get_stylesheet_directory() . '/style.css' ) );
 
-	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.2.0/js/all.js', array(), null );
+	wp_enqueue_script( 'font-awesome', '//use.fontawesome.com/releases/v5.2.0/js/all.js', array(), null );
 
 	wp_enqueue_script( 'bigslide', get_template_directory_uri() . '/js/bigSlide.min.js', array('jquery'), '0.12.0', true );
 
-	wp_enqueue_script( 'davejmoz-navigation', get_template_directory_uri() . '/js/navigation-min.js', array('bigslide'), '1.0', true );
+	wp_enqueue_script( 'davejmoz-navigation', get_template_directory_uri() . '/js/navigation-min.js', array('bigslide'), filemtime( get_template_directory() . '/js/navigation-min.js' ), true );
 
 	wp_enqueue_script( 'davejmoz-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 

@@ -17,7 +17,7 @@
 			<span class="sep"> | </span>
 			<a href="/privacy-policy">Privacy Policy</a>
 			<span class="sep"> | </span>
-			Made with <span class="heart"><i class="fas fa-heart"></i></span> in NY and <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'davejmoz' ) ); ?>"><?php printf( esc_html__( 'proudly powered by %s', 'davejmoz' ), 'WordPress' ); ?></a>.
+			Made with <span class="heart"><i class="fas fa-heart"></i></span> in NY and <a href="<?php echo esc_url( __( 'https://wordpress.com/alp/?aff=3656&cid=2529066', 'davejmoz' ) ); ?>"><?php printf( esc_html__( 'proudly powered by %s', 'davejmoz' ), 'WordPress' ); ?></a>.
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

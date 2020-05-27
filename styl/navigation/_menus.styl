@@ -6,7 +6,6 @@
 		top 2rem
 .main-navigation
 	display flex
-	padding-right 0
 	#nav-wrap
 		display none
 	#mobile-nav-wrap
@@ -41,16 +40,15 @@
 					display flex
 					justify-content center
 					align-items center
-					&:hover,
-					&:focus
-						a
-							background rgba(0,0,0,0.5)
 					a
 						width 100%
 						text-align center
 						display block
 						text-decoration none
 						padding 1.5rem
+						&:hover,
+						&:focus
+							background rgba(0,0,0,0.5)
 				.current_page_item > a,
 				.current-menu-item > a,
 				.current_page_ancestor > a
@@ -106,18 +104,18 @@
 						color #ffffff
 						&:hover
 							opacity 0.6
-				[id*=-Twitter]
-					a
-						background-color $color__social_twitter
-				[id*=-Instagram]
-					a
-						background-color $color__social_instagram
-				[id*=-LinkedIn]
-					a
-						background-color $color__social_linkedin
-				[id*=-Dribbble]
-					a
-						background-color $color__social_dribbble
+					[title="Twitter"]
+						a
+							background-color $color__social_twitter
+					[title="Instagram"]
+						a
+							background-color $color__social_instagram
+					[title="LinkedIn"]
+						a
+							background-color $color__social_linkedin
+					[title="Dribbble"]
+						a
+							background-color $color__social_dribbble
 
 	// Mobile menu toggle ------------------------
 	.menu-toggle
@@ -127,7 +125,9 @@
 		padding 0 2rem
 		cursor pointer
 		z-index 9999
-
+		position absolute
+		top 4em
+		right .75em
 		.icon-small-size
 			display: block;
 			fill: none;
@@ -139,10 +139,8 @@
 			overflow: visible;
 			width: 2rem;
 			height: 2rem;
-
 			path
 				transition: .4s all ease-out
-
 			#top-line,
 			#bottom-line
 				-webkit-transform rotate(0deg) translate3d(0,0,0)
@@ -151,41 +149,30 @@
 				transition -webkit-transform .2s ease-in
 				transition transform .2s ease-in
 				transition transform .2s ease-in,-webkit-transform .2s ease-in
-			
 			#middle-line
 				-webkit-transition opacity .2s ease-in
 				transition opacity .2s ease-in
-		
-		&:hover	
-			line
-
 		&.active
-
+			top 40px
 			line
 				stroke #ffffff
 				transition .4s all ease-out
-			
 			#top-line
 				-webkit-transform rotate(-45deg) translate3d(-6px,8px,0)
 				transform rotate(-45deg) translate3d(-6px,9px,0)
-			
 			#bottom-line
 				-webkit-transform rotate(45deg) translate3d(2px,-13px,0)
 				transform rotate(45deg) translate3d(1px,-12px,0)
-
 			#middle-line
 				opacity 0
-
 			&:hover
 				line
 				stroke #fff
-
 			/ ~ .site-branding
 				color #ffffff
 
-+desktop()
++widerThan($tabletLG)
 	.main-navigation
-		padding-right 2rem
 		.menu-toggle
 			display none
 		#mobile-nav-wrap
@@ -209,15 +196,16 @@
 					li
 						display flex
 						align-items center
-						&:hover,
-						&:focus
-							a
-								background rgba(0,0,0,0.2)
+						a
+							&:hover,
+							&:focus
+								background rgba(0,0,0,0.1)
 						a
 							display flex
 							align-items center
 							text-decoration none
 							padding .75rem 1.75rem
+							border-radius 100px
 					.current_page_item,
 					.current-menu-item,
 					.current_page_ancestor
@@ -252,27 +240,19 @@
 							margin-right 0
 							a
 								margin-right 0
-					[id*=-Twitter]
-						a
-							color $color__social_twitter
+						[title=Twitter]
 							&:hover
 								color #ffffff
 								background $color__social_twitter
-					[id*=-Instagram]
-						a
-							color $color__social_instagram
+						[title=Instagram]
 							&:hover
 								color #ffffff
 								background $color__social_instagram
-					[id*=-LinkedIn]
-						a
-							color $color__social_linkedin
+						[title=LinkedIn]
 							&:hover
 								color #ffffff
 								background $color__social_linkedin
-					[id*=-Dribbble]
-						a
-							color $color__social_dribbble
+						[title=Dribbble]
 							&:hover
 								color #ffffff
 								background $color__social_dribbble
@@ -281,7 +261,6 @@
 .posts-navigation,
 .post-navigation
 	display flex
-
 	.site-main &
 		margin 0 0 1.5em
 		overflow hidden

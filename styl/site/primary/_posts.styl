@@ -1,0 +1,67 @@
+/* General */
+.sticky
+	display block
+.hentry
+	margin 0
+.byline
+.updated:not(.published)
+	display none
+.single .byline
+.group-blog .byline
+	display inline
+.page-content
+.entry-content
+.entry-summary
+	margin 1.5em 0 0
+.page-links
+	clear both
+	margin 0 0 1.5em
+
+/* Single Projects Content */
+.project
+	display flex
+	flex-direction column
+	width 100%
+	margin 0 auto
+	+widerThan($tabletSM)
+		width 80%
+	header
+		padding 0
+		.entry-title
+			margin 0
+			white-space nowrap
+			color #000
+		.entry-meta
+			display none
+		.project-image
+			object-fit cover
+			opacity .6
+		&:hover
+			.project-image
+				opacity 1
+	.entry-content
+		p
+			width 80%
+			margin-left auto
+			margin-right auto
+			& > img
+				&::before,
+				&::after
+					font-size 20px
+				&::before
+					content 'Before'
+				&::after
+					content 'After'
+		.wp-block-image
+			text-align center
+			margin-top 3em
+			margin-bottom 3em
+			& > img
+				width 100%
+			& > figcaption
+				color #b7b7b7
+	.entry-footer
+		display none
+.single-project
+	.post-navigation
+		display none
