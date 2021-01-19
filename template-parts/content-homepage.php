@@ -10,7 +10,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-		<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+		<?php // the_title('<h2 class="entry-title">', '</h2>'); ?>
 		<img class="project-image" src="<?php the_post_thumbnail_url('large'); ?>" />
 	</a>
 	<?php
