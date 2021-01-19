@@ -7,23 +7,23 @@
 		"uuidString": "94169419-D99A-4F8F-B331-E932B422296F"
 		}
 	],
-"creatorBuild": "31934",
+"creatorBuild": "32001",
 "files": {
-	"/.vscode/.launch.json.icloud": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/.vscode/.launch.json.icloud",
-		"oF": 0
+	"/.vscode/launch.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/.vscode/launch-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
-	"/.vscode/.settings.json.icloud": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/.vscode/.settings.json.icloud",
-		"oF": 0
+	"/.vscode/settings.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/.vscode/settings-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"/404.php": {
 		"cB": 0,
@@ -1509,6 +1509,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"grouped-accessor-pairs": {
+			"active": 0,
+			"optionString": "'anyOrder'"
+			},
 		"guard-for-in": {
 			"active": 0,
 			"optionString": ""
@@ -1685,6 +1689,10 @@
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
+		"no-constructor-return": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-continue": {
 			"active": 0,
 			"optionString": ""
@@ -1710,6 +1718,10 @@
 			"optionString": ""
 			},
 		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-else-if": {
 			"active": 1,
 			"optionString": ""
 			},
@@ -2013,6 +2025,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-setter-return": {
+			"active": 1,
+			"optionString": ""
+			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
@@ -2216,6 +2232,10 @@
 		"prefer-destructuring": {
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
+		"prefer-exponentiation-operator": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-named-capture-group": {
 			"active": 0,
